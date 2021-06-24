@@ -6,10 +6,6 @@ PLAIN_LO = "plain_lowercase"
 JSON = "json"
 XML = "xml"
 
-x = {
-  "imie": "Brygida",
-  "msg": "Hello World!"
-}
 
 SUPPORTED = [PLAIN, PLAIN_UP, PLAIN_LO, JSON, XML]
 
@@ -33,6 +29,10 @@ def get_formatted(msg, imie, format):
 #     return ('{ "imie":"' + imie + '", "msg":"' + msg + '"}')
 
 def format_to_json(msg, imie):
+    x = {
+      "imie": "Brygida",
+      "msg": "Hello World!"
+    }
     y = json.dumps(x)
     return y
 
