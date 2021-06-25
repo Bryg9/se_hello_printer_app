@@ -13,5 +13,5 @@ after_success:
   - make docker_push
 deploy:
   provider: heroku
-  app: NAZWA TWOJEJ APLIKACJI
+  app: mighty-journey-43896
   api_key: ${HEROKU_API_KEY}
